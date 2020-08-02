@@ -1,45 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
-:root{
+:root {
   --primary: #efb6b2;
   --secondary: #4e4e4e;
   --error: #ff4a4a;
 }
 
 /* base styles & title */
-body{
-  font-family: "Noto Serif";
+body {
+  font-family: 'Noto Serif';
   color: var(--secondary);
 }
-.App{
+.App {
   max-width: 960px;
   margin: 0 auto;
 }
-.title h1{
+.title h1 {
   color: var(--primary);
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: normal;
 }
-.title h2, .title p{
+.title h2,
+.title p {
   text-align: center;
 }
-.title h2{
+.title h2 {
   margin-top: 60px;
   font-size: 2.6rem;
 }
 
 /* upload form styles */
-form{
+form {
   margin: 30px auto 10px;
   text-align: center;
 }
-label input{
+label input {
   height: 0;
   width: 0;
   opacity: 0;
 }
-label{
+label {
   display: block;
   width: 30px;
   height: 30px;
@@ -51,26 +52,48 @@ label{
   font-weight: bold;
   font-size: 24px;
 }
-label:hover{
+label:hover {
   background: var(--primary);
   color: white;
 }
-.output{
+.output {
   height: 60px;
   font-size: 0.8rem;
 }
-.error{
+.error {
   color: var(--error);
 }
 
 /* progress bar styles */
-.progress-bar{
+.progress-bar {
   height: 5px;
   background: var(--primary);
   margin-top: 20px;
 }
 
 /* image grid styles */
+.img-grid {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
 
+.img-wrap {
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+  opacity: 0.8;
+}
+
+.img-wrap img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 /* modal styles */
